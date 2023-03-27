@@ -14,6 +14,14 @@
 		5DB4F14729CC018600752BDD /* Unsplashapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F14529CC018600752BDD /* Unsplashapp.xcdatamodeld */; };
 		5DB4F14929CC018700752BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB4F14829CC018700752BDD /* Assets.xcassets */; };
 		5DB4F14C29CC018700752BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB4F14A29CC018700752BDD /* LaunchScreen.storyboard */; };
+		5DB4F15429CC129900752BDD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F15329CC129900752BDD /* DataModel.swift */; };
+		5DB4F15629CC981F00752BDD /* DisplayImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F15529CC981F00752BDD /* DisplayImageVC.swift */; };
+		5DB4F15A29CC98E100752BDD /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F15929CC98E100752BDD /* HTTPHelper.swift */; };
+		5DB4F15D29CC9D7700752BDD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F15C29CC9D7700752BDD /* DataManager.swift */; };
+		5DB4F16629CC9FDC00752BDD /* CollectioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F16529CC9FDC00752BDD /* CollectioVC.swift */; };
+		5DB4F16929CCA32100752BDD /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F16729CCA32100752BDD /* Image+CoreDataClass.swift */; };
+		5DB4F16A29CCA32100752BDD /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F16829CCA32100752BDD /* Image+CoreDataProperties.swift */; };
+		5DB4F16C29CDF83100752BDD /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F16B29CDF83000752BDD /* MediaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		5DB4F14829CC018700752BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DB4F14B29CC018700752BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DB4F14D29CC018700752BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB4F15329CC129900752BDD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5DB4F15529CC981F00752BDD /* DisplayImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImageVC.swift; sourceTree = "<group>"; };
+		5DB4F15929CC98E100752BDD /* HTTPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		5DB4F15C29CC9D7700752BDD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		5DB4F16529CC9FDC00752BDD /* CollectioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectioVC.swift; sourceTree = "<group>"; };
+		5DB4F16729CCA32100752BDD /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5DB4F16829CCA32100752BDD /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5DB4F16B29CDF83000752BDD /* MediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +74,12 @@
 		5DB4F13B29CC018600752BDD /* Unsplashapp */ = {
 			isa = PBXGroup;
 			children = (
+				5DB4F16229CC9E2A00752BDD /* HTTPHelper */,
+				5DB4F15B29CC9CB700752BDD /* Model */,
+				5DB4F16329CC9E4300752BDD /* View */,
+				5DB4F16429CC9EA600752BDD /* View Model */,
 				5DB4F13C29CC018600752BDD /* AppDelegate.swift */,
 				5DB4F13E29CC018600752BDD /* SceneDelegate.swift */,
-				5DB4F14029CC018600752BDD /* ViewController.swift */,
 				5DB4F14229CC018600752BDD /* Main.storyboard */,
 				5DB4F14829CC018700752BDD /* Assets.xcassets */,
 				5DB4F14A29CC018700752BDD /* LaunchScreen.storyboard */,
@@ -68,6 +87,43 @@
 				5DB4F14529CC018600752BDD /* Unsplashapp.xcdatamodeld */,
 			);
 			path = Unsplashapp;
+			sourceTree = "<group>";
+		};
+		5DB4F15B29CC9CB700752BDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DB4F16729CCA32100752BDD /* Image+CoreDataClass.swift */,
+				5DB4F16829CCA32100752BDD /* Image+CoreDataProperties.swift */,
+				5DB4F15C29CC9D7700752BDD /* DataManager.swift */,
+				5DB4F15329CC129900752BDD /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5DB4F16229CC9E2A00752BDD /* HTTPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				5DB4F15929CC98E100752BDD /* HTTPHelper.swift */,
+			);
+			path = HTTPHelper;
+			sourceTree = "<group>";
+		};
+		5DB4F16329CC9E4300752BDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DB4F14029CC018600752BDD /* ViewController.swift */,
+				5DB4F16529CC9FDC00752BDD /* CollectioVC.swift */,
+				5DB4F16B29CDF83000752BDD /* MediaCollectionViewCell.swift */,
+				5DB4F15529CC981F00752BDD /* DisplayImageVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DB4F16429CC9EA600752BDD /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB4F15429CC129900752BDD /* DataModel.swift in Sources */,
+				5DB4F16629CC9FDC00752BDD /* CollectioVC.swift in Sources */,
 				5DB4F14129CC018600752BDD /* ViewController.swift in Sources */,
 				5DB4F13D29CC018600752BDD /* AppDelegate.swift in Sources */,
+				5DB4F15A29CC98E100752BDD /* HTTPHelper.swift in Sources */,
 				5DB4F13F29CC018600752BDD /* SceneDelegate.swift in Sources */,
 				5DB4F14729CC018600752BDD /* Unsplashapp.xcdatamodeld in Sources */,
+				5DB4F16C29CDF83100752BDD /* MediaCollectionViewCell.swift in Sources */,
+				5DB4F15D29CC9D7700752BDD /* DataManager.swift in Sources */,
+				5DB4F15629CC981F00752BDD /* DisplayImageVC.swift in Sources */,
+				5DB4F16929CCA32100752BDD /* Image+CoreDataClass.swift in Sources */,
+				5DB4F16A29CCA32100752BDD /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
